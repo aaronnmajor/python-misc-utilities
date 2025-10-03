@@ -1,0 +1,7 @@
+[flake8]
+max-line-length = 100
+extend-ignore = E203, W503
+# Allow module level imports after sys.path manipulation in scripts and examples
+per-file-ignores =
+    scripts/*.py:E402
+    examples/*.py:E402
